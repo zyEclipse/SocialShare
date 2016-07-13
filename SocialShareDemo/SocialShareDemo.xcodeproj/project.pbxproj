@@ -46,6 +46,7 @@
 		2A9C35511D34E06500372FA1 /* libSocialWechat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C35421D34E06400372FA1 /* libSocialWechat.a */; };
 		2A9C35521D34E06500372FA1 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C35431D34E06400372FA1 /* libWeChatSDK.a */; };
 		2A9C35531D34E06500372FA1 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C35441D34E06400372FA1 /* README.txt */; };
+		2A9C35561D35EE3900372FA1 /* pets_370px_1165235_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C35551D35EE3900372FA1 /* pets_370px_1165235_easyicon.net.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +144,8 @@
 		2A9C35461D34E06400372FA1 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
 		2A9C35471D34E06400372FA1 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
 		2A9C35481D34E06400372FA1 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		2A9C35541D35DF7300372FA1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2A9C35551D35EE3900372FA1 /* pets_370px_1165235_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pets_370px_1165235_easyicon.net.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,8 +223,10 @@
 		2A29983B1D3392A700560E0E /* SocialShareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2A9C35551D35EE3900372FA1 /* pets_370px_1165235_easyicon.net.png */,
 				2A29983F1D3392A700560E0E /* AppDelegate.h */,
 				2A2998401D3392A700560E0E /* AppDelegate.m */,
+				2A9C35541D35DF7300372FA1 /* PrefixHeader.pch */,
 				2A2998421D3392A700560E0E /* ViewController.h */,
 				2A2998431D3392A700560E0E /* ViewController.m */,
 				2A2998451D3392A700560E0E /* Main.storyboard */,
@@ -440,6 +445,7 @@
 				TargetAttributes = {
 					2A2998381D3392A700560E0E = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 4ZSL6JL7XX;
 					};
 					2A2998511D3392A700560E0E = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -493,6 +499,7 @@
 				2A9C34941D3397F900372FA1 /* UMSnsAccountViewController.xib in Resources */,
 				2A9C354B1D34E06400372FA1 /* WeiboSDK.bundle in Resources */,
 				2A9C34951D3397F900372FA1 /* UMSShareListController.xib in Resources */,
+				2A9C35561D35EE3900372FA1 /* pets_370px_1165235_easyicon.net.png in Resources */,
 				2A9C34961D3397F900372FA1 /* UMSocialSDKResourcesNew.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,12 +677,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/UMSocial_Sdk_5.2.1/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SocialShareDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SocialShareDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -688,6 +699,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zktd.com.FavoritePetFromZhongKe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -695,12 +707,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/UMSocial_Sdk_5.2.1/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
 				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SocialShareDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SocialShareDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -713,6 +729,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zktd.com.FavoritePetFromZhongKe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
