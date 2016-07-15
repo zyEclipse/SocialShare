@@ -18,18 +18,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     
-    [UMSocialData setAppKey:@"5784955f67e58e477d001d7a"];
+    [UMSocialData setAppKey:KUMeng_APP_Key];
     //设置手机QQ 的AppId，Appkey，和分享URL，需要#import "UMSocialQQHandler.h"
-    [UMSocialQQHandler setQQWithAppId:QQ_APP_ID appKey:QQ_APP_KEY url:@"http://www.umeng.com/social"];
+    [UMSocialQQHandler setQQWithAppId:KQQ_APP_ID appKey:KQQ_APP_KEY url:@"http://www.umeng.com/social"];
 
-    [UMSocialData defaultData].extConfig.qqData.url = @"itms://itunes.apple.com/gb/app/yi-dong-cai-bian/id1116458813?mt=8";
-    [UMSocialData defaultData].extConfig.qzoneData.url = @"itms://itunes.apple.com/gb/app/yi-dong-cai-bian/id1116458813?mt=8";
-    [UMSocialData defaultData].extConfig.qqData.title = @"农业物联网";
-    [UMSocialData defaultData].extConfig.qzoneData.title = @"农业物联网_QQZone";
+    [UMSocialData defaultData].extConfig.qqData.url = KShare_Url;
+    [UMSocialData defaultData].extConfig.qzoneData.url =KShare_Url;
+    [UMSocialData defaultData].extConfig.qqData.title =KShare_Title;
+    [UMSocialData defaultData].extConfig.qzoneData.title = KShare_Title;
     //QQ分享消息类型分为图文、纯图片，QQ空间分享只支持图文分享（图片文字缺一不可）
     
 //    QQ分享消息默认为图文类型，设置纯图片类型方法为
 //    [UMSocialData defaultData].extConfig.qqData.qqMessageType = UMSocialQQMessageTypeImage;
+    
     return YES;
 }
 //添加分享需要的方法

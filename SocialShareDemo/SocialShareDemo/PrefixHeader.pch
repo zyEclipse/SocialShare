@@ -8,8 +8,16 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
-#define QQ_APP_ID @"1105536872"
-#define QQ_APP_KEY  @"nVX15cjYpnp44Bnw"
+//UMeng
+#define KUMeng_APP_Key @"5785e51367e58ee9e40011e0"
+//QQ
+#define KQQ_APP_ID @"1105536872"
+#define KQQ_APP_KEY  @"nVX15cjYpnp44Bnw"
+
+
+#define KShare_Title @"农业物联网"
+#define KShare_Url   @"itms://itunes.apple.com/gb/app/yi-dong-cai-bian/id1116458813?mt=8"
+
 #import "UMSocial.h"
 #import "UMSocialQQHandler.h"
 // Include any system framework and library headers here that should be included in all compilation units.

@@ -29,25 +29,22 @@
 }
 - (void)shareToQQ{
     //如果需要分享回调，请将delegate对象设置self，并实现下面的回调方法
+    NSString *title = KShare_Title;
+    NSString *url = KShare_Url;
+    //QQ
+    [UMSocialData defaultData].extConfig.qqData.title = title;
+    [UMSocialData defaultData].extConfig.qqData.url = url;
+    //QQZone
+    [UMSocialData defaultData].extConfig.qzoneData.title = title;
+    [UMSocialData defaultData].extConfig.qzoneData.url = url;
     
-    [UMSocialData defaultData].extConfig.title = @"分享的title";
-    //这里只配置了qq分享后跳转的url,其他平台可再添加配置,如微信平台将qqData替换为wechatSessionData
-    [UMSocialData defaultData].extConfig.qqData.url = @"itms://itunes.apple.com/gb/app/yi-dong-cai-bian/id1116458813?mt=8";
+    NSString  *path = [[NSBundle mainBundle] pathForResource:@"CgEHC1VGJz2HZm6eAAEe8iEJ1Go460_600-0_6-0" ofType:@"jpg"];
+    UIImage *iconImage = [UIImage imageWithContentsOfFile:path];
     [UMSocialSnsService presentSnsIconSheetView:self
-                                         appKey:QQ_APP_KEY
+                                         appKey:KQQ_APP_KEY
                                       shareText:@"农业物联网能够满足作物远程管理,远程监控作物生长状态的需求"
-                                     shareImage:[UIImage imageNamed:@"icon"]
-                                shareToSnsNames:@[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToSina,UMShareToQQ,UMShareToQzone]
-                                       delegate:self];
-    //分享URL图片资源
-    [[UMSocialData defaultData].urlResource setResourceType:UMSocialUrlResourceTypeImage url:@"http://www.baidu.com/img/bdlogo.gif"];
-    [UMSocialData defaultData].extConfig.title = @"分享的title";
-    [UMSocialData defaultData].extConfig.qqData.url = @"itms://itunes.apple.com/gb/app/yi-dong-cai-bian/id1116458813?mt=8";
-    [UMSocialSnsService presentSnsIconSheetView:self
-                                         appKey:QQ_APP_KEY
-                                      shareText:@"农业物联网能够满足作物远程管理,远程监控作物生长状态的需求"
-                                     shareImage:[UIImage imageNamed:@"icon"]
-                                shareToSnsNames:@[UMShareToWechatSession,UMShareToWechatTimeline,UMShareToSina,UMShareToQQ,UMShareToQzone]
+                                     shareImage:iconImage
+                                shareToSnsNames:@[UMShareToQQ,UMShareToQzone]
                                        delegate:self];
 }
 -(void)didFinishGetUMSocialDataInViewController:(UMSocialResponseEntity *)response
@@ -57,6 +54,7 @@
     {
         //得到分享到的平台名
         NSLog(@"share to sns name is %@",[[response.data allKeys] objectAtIndex:0]);
+        
     }
 }
 - (void)didReceiveMemoryWarning {

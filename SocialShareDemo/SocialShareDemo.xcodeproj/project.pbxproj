@@ -15,6 +15,7 @@
 		2A29984C1D3392A700560E0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A29984A1D3392A700560E0E /* LaunchScreen.storyboard */; };
 		2A2998571D3392A700560E0E /* SocialShareDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2998561D3392A700560E0E /* SocialShareDemoTests.m */; };
 		2A2998621D3392A700560E0E /* SocialShareDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2998611D3392A700560E0E /* SocialShareDemoUITests.m */; };
+		2A97E36D1D3616E300584532 /* CgEHC1VGJz2HZm6eAAEe8iEJ1Go460_600-0_6-0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A97E36C1D3616E300584532 /* CgEHC1VGJz2HZm6eAAEe8iEJ1Go460_600-0_6-0.jpg */; };
 		2A9C348C1D3397F900372FA1 /* UMSocialLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C34721D3397F900372FA1 /* UMSocialLocalizable.strings */; };
 		2A9C348D1D3397F900372FA1 /* libUMSocial_Sdk_5.2.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9C34801D3397F900372FA1 /* libUMSocial_Sdk_5.2.1.a */; };
 		2A9C348E1D3397F900372FA1 /* UMSCommentDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A9C34821D3397F900372FA1 /* UMSCommentDetailController.xib */; };
@@ -83,6 +84,7 @@
 		2A29985D1D3392A700560E0E /* SocialShareDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SocialShareDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2998611D3392A700560E0E /* SocialShareDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocialShareDemoUITests.m; sourceTree = "<group>"; };
 		2A2998631D3392A700560E0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A97E36C1D3616E300584532 /* CgEHC1VGJz2HZm6eAAEe8iEJ1Go460_600-0_6-0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "CgEHC1VGJz2HZm6eAAEe8iEJ1Go460_600-0_6-0.jpg"; sourceTree = "<group>"; };
 		2A9C34731D3397F900372FA1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/UMSocialLocalizable.strings; sourceTree = "<group>"; };
 		2A9C34751D3397F900372FA1 /* UMSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocial.h; sourceTree = "<group>"; };
 		2A9C34761D3397F900372FA1 /* UMSocialAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMSocialAccountManager.h; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		2A29983B1D3392A700560E0E /* SocialShareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2A97E36C1D3616E300584532 /* CgEHC1VGJz2HZm6eAAEe8iEJ1Go460_600-0_6-0.jpg */,
 				2A9C35551D35EE3900372FA1 /* pets_370px_1165235_easyicon.net.png */,
 				2A29983F1D3392A700560E0E /* AppDelegate.h */,
 				2A2998401D3392A700560E0E /* AppDelegate.m */,
@@ -497,6 +500,7 @@
 				2A9C348C1D3397F900372FA1 /* UMSocialLocalizable.strings in Resources */,
 				2A2998471D3392A700560E0E /* Main.storyboard in Resources */,
 				2A9C34941D3397F900372FA1 /* UMSnsAccountViewController.xib in Resources */,
+				2A97E36D1D3616E300584532 /* CgEHC1VGJz2HZm6eAAEe8iEJ1Go460_600-0_6-0.jpg in Resources */,
 				2A9C354B1D34E06400372FA1 /* WeiboSDK.bundle in Resources */,
 				2A9C34951D3397F900372FA1 /* UMSShareListController.xib in Resources */,
 				2A9C35561D35EE3900372FA1 /* pets_370px_1165235_easyicon.net.png in Resources */,
